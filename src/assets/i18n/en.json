@@ -1,0 +1,99 @@
+{
+    "game": {
+        "title_game": "Will you find them?",
+        "play_btn": "Play",
+        "recommended_game": "Recommended game: Stardew Valley"
+    },
+    "contact": {
+        "header": "Contact",
+        "name_label": "Name:",
+        "reply_label": "Reply to:",
+        "message_label": "Message:",
+        "send_button": "Send email",
+        "view_cv": "View resume",
+        "go_linkedin": "Go to LinkedIn"
+    },
+    "experience": {
+        "header": "Experience",
+        "projects": [
+            {
+                "title": "Software developer (React)",
+                "location_date": "Remote, Argentina October 2024 | Current",
+                "details": [
+                    "Participated in the development of an innovative rental web application as a Fullstack Developer.",
+                    "Played a key role in a multidisciplinary team, promoting agile methodologies and cutting-edge tools such as React, Tailwind CSS, Material-Tailwind, TypeScript, Docker.",
+                    "Actively involved in the planning, design, and implementation of critical components, solving complex technical challenges with creative and effective solutions."
+                ]
+            },
+            {
+                "logo": "../../assets/icons8-fiverr-144.png",
+                "title": "Software developer (Angular)",
+                "location_date": "Remote, Spain March 2024 - October 2024",
+                "details": [
+                    "Developed responsive web and mobile applications, ensuring optimized user experiences across various devices.",
+                    "Contributed to innovative commercial projects using Angular, PHP, HTML5, CSS3, and Ionic Framework.",
+                    "Improved application efficiency and usability through continuous maintenance and constant enhancements.",
+                    "Resolved complex technical issues, reducing response times and ensuring system functionality."
+                ]
+            },
+            {
+                "logo": "../../assets/icons8-fiverr-144.png",
+                "title": "Full-stack Web Developer Freelance (Angular)",
+                "location_date": "Argentina November 2022 - March 2024",
+                "details": [
+                    "Designed and developed a client management application using Angular and Java, optimizing administrative processes for multiple offices.",
+                    "Implemented advanced PDF printing functionality, enhancing the automatic generation of documents and reports.",
+                    "Designed and integrated a cash management system, improving daily financial control.",
+                    "Managed the installation, configuration, and proper use of the application in various offices, ensuring a smooth transition and ongoing technical support."
+                ]
+            }
+        ]
+    },
+    "profile": {
+        "header": "Juan Augusto Haser",
+        "subheader": "Systems Analyst and Full-Stack Web Developer trained at IAES and Argentina Programa. Experienced in innovative technology projects, working in agile teams, and contributing to the development of web applications with technologies like Angular, React, TypeScript, and Docker.",
+        "theme_switch": "Switch theme",
+        "language_switch": "Switch language",
+        "alt_profile_image": "Profile image",
+        "alt_theme_icon": "Theme icon",
+        "alt_language_icon": "Language icon",
+        "alt_book_icon": "Book icon",
+        "sections": {
+            "experience": "Experience",
+            "technologies": "Technologies"
+        },
+        "buttons": {
+            "view_book_1": "View book 1",
+            "view_book_3": "View book 3",
+            "view_book_6": "View book 6",
+            "view_book_8": "View book 8"
+        }
+    },
+    "study": {
+        "header": "Studies",
+        "alt_study_logo": "Study logo",
+        "prev_button": "Previous",
+        "next_button": "Next",
+        "alt_book_icon": "Book icon",
+        "iaes": {
+            "institution": "IAES",
+            "degree": "2022 - Present",
+            "description": "Pursuing a degree in Systems Analysis."
+        },
+        "pearson": {
+            "institution": "English Course (Pearson)",
+            "degree": "2022 - 2023",
+            "description": "English course provided by Argentina Programa in partnership with Pearson."
+        },
+        "argentina_programa": {
+            "institution": "Argentina Programa",
+            "degree": "2022 - 2023",
+            "description": "Program sponsored by the Ministry of Economy, focused on web development with the goal of becoming a Fullstack Developer."
+        },
+        "freecodecamp": {
+            "institution": "FreeCodeCamp",
+            "degree": "Mid-2021",
+            "description": "FreeCodeCamp Design Certificate."
+        }
+    }      
+}

@@ -1,0 +1,80 @@
+<div class="container mt-5">
+  <div *ngIf="nine">
+    <img 
+      src="../../../assets/icons8-book-96.png" 
+      alt="book" 
+      class="book"
+      id="s-book"
+      (click)="getBook('9')" 
+    >
+  </div>
+
+  <div class="row">
+    <div *ngIf="currentLang === 'en' && forth">
+      <img 
+        src="../../../assets/icons8-book-96.png" 
+        alt="book" 
+        class="book" 
+        (click)="getBook('4')" 
+      >
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-7">
+      <div class="mb-4 icons-container">
+        <div class="header-container">
+          <h2>{{ 'contact.header' | translate }}</h2>
+          <button (click)="copyEmail()" id="copyEmail" class="btn-copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+
+
+        
+        <div class="icons-container">
+          <div *ngIf="copied && five">
+            <img 
+              src="../../../assets/icons8-book-96.png" 
+              alt="book" 
+              class="book" 
+              (click)="getBook('5')" 
+            >
+          </div>
+          <button class="icon-item" (click)="openCv()">
+            <img src="../../../assets/icons8-curriculum-100.png" alt="view/download curriculum icon">
+            <p class="hide"><b>{{ 'contact.view_cv' | translate }}</b></p>
+          </button>
+
+          <a class="icon-item" href="https://www.linkedin.com/in/juan-augusto-haser-744733247/" target="_blank">
+            <img src="../../../assets/icons8-linkedin-144.png" alt="go linkedin icon">
+            <p class="hide"><b>{{ 'contact.go_linkedin' | translate }}</b></p>
+          </a>
+        </div>
+      </div>
+
+      <form (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm" id="form" class="mx-auto">
+        <div class="mb-3">
+          <label for="from_name" class="form-label">{{ 'contact.name_label' | translate }}</label>
+          <input type="text" id="from_name" class="form-control" name="from_name" ngModel required>
+        </div>
+
+        <div class="mb-3">
+          <label for="reply_to" class="form-label">{{ 'contact.reply_label' | translate }}</label>
+          <input type="email" id="reply_to" class="form-control" name="reply_to" ngModel required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">{{ 'contact.message_label' | translate }}</label>
+          <textarea id="message" class="form-control" name="message" ngModel required rows="4"></textarea>
+        </div>
+
+        <button type="submit" id="button" class="btn btn-success" [disabled]="!contactForm.valid">
+          {{ 'contact.send_button' | translate }}
+        </button>
+      </form>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-5 px-2">
+      <app-game-section></app-game-section>
+    </div>
+  </div>
+</div>

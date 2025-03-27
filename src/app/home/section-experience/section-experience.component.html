@@ -1,0 +1,31 @@
+<div id="content">
+  <div class="container container-fluid mx-auto">
+    <div class="row">
+      <h5 class="text-center">{{ 'experience.header' | translate }}</h5>
+      <div class="d-flex align-items-center carrousel">
+        <div class="carrousel-content d-flex flex-column align-items-start">
+          <div *ngFor="let exp of experiencias; let i = index" class="d-flex align-items-center mb-3">
+            <img *ngIf="exp.logo" [src]="exp.logo" alt="logo" class="me-3">
+            <div>
+              <span class="medium">{{ 'experience.projects.' + i + '.title' | translate }}</span><br>
+              <span class="small">{{ 'experience.projects.' + i + '.location_date' | translate }}</span>
+              <ul>
+                <li *ngFor="let detail of exp.details">
+                  <i class="smaller">{{ detail | translate }}</i>
+                </li>
+              </ul>
+            </div>
+            <div *ngIf="exp.logo === '../../assets/icons8-fiverr-144.png' && second">
+              <img 
+                src="../../../assets/icons8-book-96.png" 
+                alt="book" 
+                class="book" 
+                (click)="getBook()" 
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

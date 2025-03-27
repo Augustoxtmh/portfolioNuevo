@@ -1,0 +1,80 @@
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <section class="col-12 d-flex align-items-start">
+        <div class="d-flex align-items-start w-100">
+          <img src="../../assets/FotoPerfil.jpeg" alt="{{ 'profile.alt_profile_image' | translate }}" class="img-fluid me-3" style="max-width: 150px; height: auto;">
+
+          <div>
+            <div class="mb-3 d-flex">
+              <div class="form-check form-switch me-3">
+                <img [src]="urlTheme" alt="{{ 'profile.alt_theme_icon' | translate }}" class="switchIcon">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" (change)="switchTheme()">
+              </div>
+              <div class="form-check form-switch">
+                <img [src]="urlLang" alt="{{ 'profile.alt_language_icon' | translate }}" class="switchIcon">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" (change)="switchLang()">
+              </div>
+              <div *ngIf="theme && third">
+                <img 
+                  src="../../../assets/icons8-book-96.png" 
+                  alt="{{ 'profile.alt_book_icon' | translate }}"
+                  class="s-book"
+                  (click)="getBook('3')"                >
+              </div>
+              <div *ngIf="theme && lang && six">
+                <img 
+                  src="../../../assets/icons8-book-96.png" 
+                  alt="{{ 'profile.alt_book_icon' | translate }}"
+                  class="s-book"
+                  (click)="getBook('6')"
+                >
+              </div>
+            </div>
+
+            <h2>{{ 'profile.header' | translate }}</h2>
+            <h6>{{ 'profile.subheader' | translate }}</h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 d-flex align-items-start" id="tech">
+        <div *ngIf="clicked && height">
+          <img 
+            src="../../../assets/icons8-book-96.png" 
+            alt="{{ 'profile.alt_book_icon' | translate }}"
+            class="s-book"
+            (click)="getBook('8')"
+          >
+        </div>
+
+        <div class="d-flex flex-column align-items-center w-100 icons">
+          <div *ngFor="let group of groupedIcons" class="d-flex flex-wrap mb-2">
+            <div class="icon-container">
+              <div *ngFor="let icon of group" class="icon-wrapper">
+                <img 
+                  [src]="icon.src" 
+                  [alt]="icon.alt" 
+                  [title]="icon.title" 
+                  class="icon" 
+                  (click)="clickIcon()"
+                >
+                <span class="icon-title">{{ icon.title }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="first">
+  <img 
+    src="../../../assets/icons8-book-96.png" 
+    alt="{{ 'profile.alt_book_icon' | translate }}"
+    class="icon"
+    id="book"
+    (click)="getBook('1')"
+  >  
+</div>

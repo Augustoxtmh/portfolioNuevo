@@ -1,0 +1,65 @@
+:host{
+    position: relative;
+    z-index: 2;
+}
+
+#content {
+    margin: 5vh 5vw;
+    border: solid 2px black;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--button-background);
+}
+
+h5{
+    margin: 15px 0 15px 0;
+}
+
+img {
+    max-width: 100px;
+    padding: 5px;
+}
+
+.carrousel {
+    min-height: 300px;
+}
+
+.carousel-btn {
+    background-color: var(--background-color);
+    color: gray;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.carrousel-content {
+    width: 70%;
+}
+
+.book {
+    width: 40px;
+    height: 40px;
+    transition: box-shadow 0.3s ease;
+    opacity: 0.1;
+}
+
+.book:hover {
+    filter: drop-shadow(0 0 25px rgb(162, 241, 151));
+}
+
+@media (max-width: 600px) {
+    img{
+        display: none;
+    }
+
+    #content{
+        padding: 0;
+    }
+}

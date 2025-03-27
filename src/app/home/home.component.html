@@ -1,15 +1,29 @@
-<section id="content" class="py-2">
-    <img src="" alt="Imagen perfil">
-    
-    <div>
-        <button><img src="" alt="español"></button>
-        <button><img src="" alt="ingles"></button>
-        <button><img src="" alt="claro"></button>
-        <button><img src="" alt="oscuro"></button>
-        
-        <h1>Juan Augusto Haser</h1>
-        
-        <h3>Descripcion</h3>
-    </div>
-
-</section>
+<body [ngClass]="{
+    'darkTheme': theme,
+    'whiteTheme': !theme,
+    'resetAnimation': !animationReset
+  }">
+  <section>
+    <app-section-profile (themeChanged)="updateTheme($event)"></app-section-profile>
+    <app-section-study></app-section-study>
+    <app-section-experience></app-section-experience>
+    <app-section-contact></app-section-contact>
+  </section>
+</body>
+<div class="water-container">
+  <div class="water" [style.height.%]="waterHeight">
+    <div *ngFor="let fish of fishes"
+      class="fish"
+      [ngStyle]="{
+        '--random-translateY-1': fish.randomVerticalMovements[0] + 'px',
+        '--random-translateY-2': fish.randomVerticalMovements[1] + 'px',
+        '--random-translateY-3': fish.randomVerticalMovements[2] + 'px',
+        '--random-translateY-4': fish.randomVerticalMovements[3] + 'px',
+        '--random-translateY-5': fish.randomVerticalMovements[4] + 'px',
+        'animation-duration': fish.animationDuration + 's'
+      }"
+      [style.bottom.%]="fish.bottom">
+      <img src="../../assets/icons8-fish-100.png" alt="fish swimming" style="max-width: 25px;">
+    </div>    
+  </div>
+</div>

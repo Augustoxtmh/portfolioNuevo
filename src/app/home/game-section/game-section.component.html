@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="mb-4">
+            <div class="header-container">
+                <h2>{{ 'game.title_game' | translate }}</h2>
+            </div>
+        </div>
+        
+        <div *ngFor="let book of books" class="col-4">
+            <div *ngIf="(library$ | async)?.includes(book); else empty">
+                <img src="../../../assets/icons8-partiture-64.png" alt="lectern filled">
+            </div>
+            <ng-template #empty>
+                <img src="../../../assets/icons8-lectern-empty-64.png" alt="lectern empty">
+            </ng-template>
+        </div>
+
+        <div 
+            *ngIf="(library$ | async)?.length === 9" 
+            class="py-4 d-flex justify-content-center align-items-center">
+            <button 
+                class="btn btn-success" 
+                [ngClass]="{ 'hide': ended, 'show': !ended }" 
+                (click)="ganaste()">
+                {{ 'game.play_btn' | translate }}
+            </button>
+        </div>
+
+        <div [ngClass]="{ 'hide': !ended, 'show': ended }">
+            <img src="/assets/White_Chicken-removebg-preview.png" class="chicken my-2" alt="stardew valley chicken">
+            <img src="/assets/Brown_Cow-removebg-preview.png" class="cow" alt="stardew valley cow">
+            <img src="/assets/White_Chicken-removebg-preview.png" class="chicken" alt="stardew valley chicken">
+            <img src="/assets/Sheep-removebg-preview.png" class="sheep" alt="stardew valley sheep">
+            <img src="/assets/Brown_Chicken-removebg-preview.png" class="chicken" alt="stardew valley chicken">
+            <img src="/assets/Brown_Cow-removebg-preview.png" class="cow" alt="stardew valley cow">
+            <p>{{ 'game.recommended_game' | translate }}</p>
+        </div>
+
+        <div id="youtube-player"></div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.whiteTheme {
+  background: linear-gradient(-45deg, #ffffff, #ffebcd, #df8c8c, #ffdcbe);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.darkTheme {
+  background: linear-gradient(-45deg, #121212, #1c2a48, #0d3d62, #214f8e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.resetAnimation {
+  animation: none !important;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.water-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 15%;
+  background: linear-gradient(0deg, rgba(0,119,182,0.8) 0%, rgba(0,180,216,0.4) 100%);
+  transition: height 0.3s ease-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+      45deg,
+      transparent 33.33%,
+      rgba(255, 255, 255, 0.3) 33.33%,
+      rgba(255, 255, 255, 0.3) 66.66%,
+      transparent 66.66%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 33.33%,
+      rgba(255, 255, 255, 0.3) 33.33%,
+      rgba(255, 255, 255, 0.3) 66.66%,
+      transparent 66.66%
+    );
+    background-size: 20px 20px;
+    animation: wave 1s linear infinite;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 top;
+  }
+  100% {
+    background-position: -20px top;
+  }
+}
+
+.fish {
+  position: absolute;
+  font-size: 24px;
+  animation: swim var(--animation-duration, 10s) linear forwards;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  20% {
+    transform: translateX(20vw) translateY(var(--random-translateY-1, 0));
+  }
+  40% {
+    transform: translateX(40vw) translateY(var(--random-translateY-2, 0));
+  }
+  60% {
+    transform: translateX(60vw) translateY(var(--random-translateY-3, 0));
+  }
+  80% {
+    transform: translateX(80vw) translateY(var(--random-translateY-4, 0));
+  }
+  100% {
+    transform: translateX(100vw) translateY(var(--random-translateY-5, 0));
+  }
+}

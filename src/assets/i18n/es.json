@@ -1,0 +1,102 @@
+{
+    "game":{
+        "title_game": "¿Los encontrarás?",
+        "play_btn": "Reproducir",
+        "recommended_game": "Juego recomendado: Stardew Valley"
+    },
+    "contact": {
+        "header": "Contacto",
+        "name_label": "Nombre:",
+        "reply_label": "Responder a:",
+        "message_label": "Mensaje:",
+        "send_button": "Enviar email",
+        "view_cv": "Ver curriculum",
+        "go_linkedin": "Ir a LinkedIn"
+    },
+    "experience": {
+        "header": "Experiencia",
+        "projects": [
+        {
+            "title": "Desarrollador full-stack (React)",
+            "location_date": "Remoto, Argentina Octubre 2024 | Actual",
+            "details": [
+            "Participé en el desarrollo de una innovadora aplicación web de alquileres como Fullstack Developer.",
+            "Desempeñé un rol clave en un equipo multidisciplinario, impulsando el uso de metodologías ágiles y herramientas de vanguardia como React, Tailwind CSS, Material-Tailwind, TypeScript, Docker.",
+            "Participé activamente en la planificación, diseño e implementación de componentes críticos, resolviendo desafíos técnicos complejos con soluciones creativas y eficaces."
+            ]
+        },
+        {
+            "title": "Desarrollador full-stack (Angular)",
+            "location_date": "Remoto, España Marzo 2024 - Octubre 2024",
+            "details": [
+            "Desarrollé aplicaciones web y móviles responsivas, asegurando experiencias de usuario optimizadas para diferentes dispositivos.",
+            "Contribuí a proyectos comerciales innovadores utilizando Angular, PHP, HTML5, CSS3 e Ionic Framework.",
+            "Mejoré la eficiencia y usabilidad de aplicaciones mediante mantenimiento continuo y mejoras constantes. ",
+            "Resolví problemas técnicos complejos, disminuyendo los tiempos de respuesta y garantizando la funcionalidad del sistema."
+            ]
+        },
+        {
+            "logo": "../../assets/icons8-fiverr-144.png",
+            "title": "Desarrollador Web Full-stack Freelance (Angular)",
+            "location_date": "Argentina Noviembre 2022 - Marzo 2024",
+            "details": [
+            "Diseñé y desarrollé una aplicación de gestión de clientes utilizando Angular y Java, optimizando procesos administrativos para múltiples oficinas.",
+            "Implementé funcionalidad avanzada de impresión de PDF, mejorando la generación automática de documentos y reportes.",
+            "Diseñé e integré un sistema de gestión de caja, perfeccionando el control financiero diario.",
+            "Gestioné la instalación, configuración y correcto uso de la aplicación en diversas oficinas, garantizando una transición sin problemas y soporte técnico continuo."
+            ]
+        }
+    
+        
+        ]
+    },
+    "profile": {
+        "header": "Juan Augusto Haser",
+        "subheader": "Analista de Sistemas y Desarrollador Web Full-Stack formado en IAES y Argentina Programa. Con experiencia en proyectos tecnológicos innovadores, trabajo en equipos ágiles y contribución al desarrollo de aplicaciones web con tecnologías como Angular, React, TypeScript y Docker.",
+        "theme_switch": "Cambiar tema",
+        "language_switch": "Cambiar idioma",
+        "alt_profile_image": "Imagen de perfil",
+        "alt_theme_icon": "Icono de tema",
+        "alt_language_icon": "Icono de idioma",
+        "alt_book_icon": "Icono de libro",
+        "sections": {
+        "experience": "Experiencia",
+        "technologies": "Tecnologías"
+        },
+        "buttons": {
+        "view_book_1": "Ver libro 1",
+        "view_book_3": "Ver libro 3",
+        "view_book_6": "Ver libro 6",
+        "view_book_8": "Ver libro 8"
+        }
+    },
+    "study": {
+        "header": "Estudios",
+        "alt_study_logo": "Logo de estudio",
+        "prev_button": "Anterior",
+        "next_button": "Siguiente",
+        "alt_book_icon": "Icono de libro",
+        "iaes": {
+            "institution": "IAES",
+            "degree": "2022 - Actualidad",
+            "description": "Cursando la carrera de Analista de Sistemas."
+        },
+        "pearson": {
+            "institution": "Curso de inglés (Pearson)",
+            "degree": "2022 - 2023",
+            "description": "Curso de inglés proporcionado por Argentina Programa con Pearson."
+        },
+        "argentina_programa": {
+            "institution": "Argentina Programa",
+            "degree": "2022 - 2023",
+            "description": "Curso impulsado por el Ministerio de Economía, centrado en el desarrollo web con el objetivo de ser desarrollador Fullstack."
+        },
+            "freecodecamp": {
+            "institution": "FreeCodeCamp",
+            "degree": "Mediados de 2021",
+            "description": "Certificado de FreeCodeCamp en Diseño."
+        }
+    }
+
+
+}

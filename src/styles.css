@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color: #303330;
+    --text-color: #e7e7e7;
+    --button-background: #303330;
+    --button-background-hover: #201d1d;
+    --border: #1d1d1d;
+    --button-text-color: #ffe6e6;
+}
+
+.light-mode {
+    --background-color: #fae1e1;
+    --text-color: #313131;
+    --button-background: #fae1e1;
+    --button-background-hover: #d8c3c3;
+    --border: #af9696;
+    --button-text-color: #313131;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}

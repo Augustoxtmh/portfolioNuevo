@@ -7,6 +7,7 @@
     templateUrl: './section-profile.component.html',
     styleUrls: ['./section-profile.component.css']
   })
+  
   export class SectionProfileComponent implements OnInit {
     @Output() themeChanged = new EventEmitter<boolean>();
     urlTheme: string = '../../../assets/icons8-moon-90-removebg-preview.png';

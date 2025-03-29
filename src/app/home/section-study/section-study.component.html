@@ -1,41 +1,40 @@
-<div id="content">
-  <div class="container container-fluid mx-auto">
-    <div class="row">
-      <h5 class="text-center">{{ 'study.header' | translate }}</h5>
+<section id="content">
+  <section class="container container-fluid mx-auto row">
+    <h5 class="text-center">{{ 'study.header' | translate }}</h5>
 
-      <div class="d-flex align-items-center carrousel">
-        <button 
-          (click)="tryGoToPrevious()" 
-          class="carousel-btn prev-btn me-auto">
-          &#10094;
-        </button>
+    <div class="d-flex align-items-center carrousel">
+      <button 
+        (click)="tryGoToPrevious()" 
+        class="carousel-btn prev-btn me-auto" 
+        aria-label="Previous study">
+        &#10094;
+      </button>
 
-        <div class="carrousel-content d-flex flex-column align-items-start">
-          <div *ngFor="let est of estudios" class="d-flex align-items-center mb-3">
-            <img [src]="est[0]" [alt]="'study.alt_study_logo' | translate" class="study-logo me-3">
-            <div>
-              <span class="medium">{{ est[1] | translate }}</span><br>
-              <span class="small">{{ est[2] | translate }}</span>
-              <p class="smaller">{{ est[3] | translate }}</p>
-            </div>            
-          </div>
-        </div>
-
-        <div *ngIf="actualPage === 1 && seven">
-          <img 
-            src="../../../assets/icons8-book-96.png" 
-            [alt]="'study.alt_book_icon' | translate" 
-            class="book" 
-            (click)="getBook()" 
-          >
-        </div>
-        
-        <button 
-          (click)="tryGoToNext()" 
-          class="carousel-btn next-btn ms-auto">
-          &#10095;
-        </button>
+      <div class="carrousel-content d-flex flex-column align-items-start">
+        <figure *ngFor="let est of estudios" class="d-flex align-items-center mb-3">
+          <img [src]="est[0]" [alt]="'study.alt_study_logo' | translate" class="study-logo me-3">
+          <figcaption>
+            <span class="medium">{{ est[1] | translate }}</span><br>
+            <time class="small">{{ est[2] | translate }}</time>
+            <p class="smaller">{{ est[3] | translate }}</p>
+          </figcaption>            
+        </figure>
       </div>
+
+      <img 
+        src="../../../assets/icons8-book-96.png" 
+        [alt]="'study.alt_book_icon' | translate" 
+        class="book" 
+        (click)="getBook()"
+        *ngIf="actualPage === 1 && seven"
+      >
+      
+      <button 
+        (click)="tryGoToNext()" 
+        class="carousel-btn next-btn ms-auto"
+        aria-label="Next study">
+        &#10095;
+      </button>
     </div>
-  </div>
-</div>
+  </section>
+</section>

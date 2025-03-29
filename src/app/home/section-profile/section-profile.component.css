@@ -13,31 +13,36 @@
   
   .icon-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     border-radius: 15px;
   }
   
   .icon-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
     border: 2px solid black;
-    width: 80px;
-    border-radius: 8px;
+    width: fit-content;
+    align-items: center;
+    border-radius: 45px;
     text-align: center;
-    background-color: var(--button-background-hover);
+    padding: 5px 10px;
+    background-color: var(--background-color);
+    margin: 5px 5px;
+  }
+
+  .icon-wrapper:hover{
+    filter: drop-shadow(0 0 25px rgb(162, 241, 151));
+
   }
   
   .icon {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     transition: box-shadow 0.3s ease;
+    margin-right: 2px;
   }
-  
-  .icon:hover {
-    filter: drop-shadow(0 0 25px rgb(162, 241, 151));
+
+  #tech {
+    display: flex;
+    max-width: 100%;
   }
   
   .icon-title {
@@ -71,8 +76,8 @@
   }
   
   .s-book {
-    width: 20px;
-    height: 20px;
+    width: fit-content;
+    height: 25px;
     transition: box-shadow 0.3s ease;
     opacity: 0.1;
   }

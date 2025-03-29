@@ -1,0 +1,96 @@
+{
+    "game": {
+        "title_game": "ᑕᑯᓐᓇᖅᑐᖅᑕᒪᖖᑦ?",
+        "play_btn": "ᓴᐳᑦ",
+        "recommended_game": "ᑕᓪᓕᒪᕐᓂᖅ ᐃᑦᑎᕆᐊᖅ: Stardew Valley"
+    },
+    "contact": {
+        "header": "ᑕᐅᑐᕋᔭᖓ",
+        "name_label": "ᐊᖏᖅ:",
+        "reply_label": "ᑐᓂᔭ ᑎᑎᕋᖅᑎᑦᑎᓂᖅ:",
+        "message_label": "ᑐᓂᔭ ᖃᐅᔨᓴᖅ:",
+        "send_button": "ᑎᑎᕋᖅᑎᑦᑎᓂᖅ ᓴᖅᑭᔭᐅᕗᖅ",
+        "view_cv": "ᑲᓇᐅᑎᔪᖅ ᑕᑯᓐᓇᖅ",
+        "go_linkedin": "LinkedIn ᑲᓇᐅᑎᔪᖅ"
+    },
+    "experience": {
+        "header": "ᑎᑎᕋᖅᑎᑦᑎᓂᖅ",
+        "projects": [
+            {
+                "title": "ᐊᓐᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ full-stack (React)",
+                "location_date": "ᕼᕐᕕᒥᑦ, ᐊᓐᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ ᐅᓂᒃᑎᕆᐊ 2024 | ᐅᒥᖅᑐᖅ",
+                "details": [
+                    "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐅᓂᒃᑎᕆᐊ ᓄᓇ ᐊᐅᒪᓇ ᑕᓂᐇᖅᑎᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐊᓐᓂᑦᑎᖃᖅ.",
+                    "ᑕᓂᐇᖅᑎᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐊᓐᓂᑦᑎᖃᖅᑎᖄ ᑯᓂᐁᓕᐋᓕᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ React, Tailwind CSS, Material-Tailwind, TypeScript, Docker.",
+                    "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑯᓄᑖᖅᑎᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅᑎᖄ."
+                ]
+            },
+            {
+                "title": "ᐊᓐᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ full-stack (Angular)",
+                "location_date": "ᕼᕐᕕᒥᑦ, ᐊᓐᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ ᐅᓂᒃᑎᕆᐊ 2024 - 2024",
+                "details": [
+                    "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑎᑎᕋᖅᑎᑦᑎᓂᖅᑎᖄ ᓄᓇ ᐱᒋᐊᖅᑎᑦᑎᓂᖅᑎᖄ ᐊᓂᑦᑎᖃᖅ ᓂᓚᐅᑎᓂᖅ ᐊᓐᓂᑦᑎᖃᖅ Angular",
+                    "ᑕᓂᐇᖅᑎᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑯᓂᐁᓕᐋᓕᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ PHP, HTML5, CSS3 e Ionic Framework.",
+                    "ᑕᓂᐇᖅᑎᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅᑎᖄ ᑯᓂᐁᓕᐋᓕᓂᖅ.",
+                    "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑎᑎᕋᖅᑎᑦᑎᓂᖅᑎᖄ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ"
+                ]
+            },
+            {
+                "logo": "../../assets/icons8-fiverr-144.png",
+                "title": "ᐊᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ ᐅᓂᒃᑎᕆᐊᖅᑎᖅ full-stack Freelance (Angular)",
+                "location_date": "ᐊᓐᓂᑦᑎᖃᖅᑎᑦᑎᓂᖅ ᐅᓂᒃᑎᕆᐊᖅ ᐅᓂᒃᑎᕆᐊ 2022 - ᐋᖅᑎᑎᖅ",
+                "details": [
+                    "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐅᑎᑎᕆᐊᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑎᑎᕋᖅᑎᑦᑎᓂᖅ"
+                ]
+            }
+        ]
+    },    
+    "profile": {
+        "header": "ᐊᓐᓂᑦᑎᖃᖅ!, ᐅᒥ ᔭᐅᓐ ᐊᐅᒥᑦᑐ ᐊᐅᓐᓂᑦᑎᖃᖅ",
+        "subheader": "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐅᑎᑎᕆᐊᖅ ᐊᓐᓂᑦᑎᖃᖅᑎᖂ ᐅᒥᑦᑐ ᓄᓇ ᐊᒐᕿᓗᒃ ᓂᓚᐅᑎᓂᖅ, ᐊᓂᑦᑎᖃᖅᑐᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅᑎᖂ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᑕᑯᔭᖅ ᑎᑎᕋᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ React, TypeScript ᐊᒐᕿᓂᑦᑎᖃᖅ ᐅᑎᑎᕆᐊᖅ",
+        "theme_switch": "ᑕᑯᓐᓇᖅᑐᖅᑎᑦᑎᓂᖅ",
+        "language_switch": "ᑕᑯᓐᓇᖅᑕᐅᔭᖅᑎᑦᑎᓂᖅ",
+        "alt_profile_image": "ᐊᓂᑦᑎᖃᖅᑎᖄ ᐱᒋᐊᖅ",
+        "alt_theme_icon": "ᑕᑯᓐᓇᖅᑎᑦᑎᓂᖅ ᓯᑯᓂ",
+        "alt_language_icon": "ᑕᑯᓐᓇᖅᑎᑦᑎᓂᖅ ᑎᑎᕆᐊᖅ",
+        "alt_book_icon": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ",
+        "sections": {
+            "experience": "ᑎᑎᕋᖅᑎᑦᑎᓂᖅ",
+            "technologies": "ᑯᕐᕕᖅᓱᖅ"
+        },
+        "buttons": {
+            "view_book_1": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ 1",
+            "view_book_3": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ 3",
+            "view_book_6": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ 6",
+            "view_book_8": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ 8"
+        }
+    },
+    "study": {
+        "header": "ᑕᓯᐱᖅ",
+        "alt_study_logo": "ᑕᓯᐱᖅ ᐊᖅᑎᑕᓗᖅ",
+        "prev_button": "ᐊᓐᓂᑦᑎᖃᖅ",
+        "next_button": "ᑎᑎᕋᖅᑎᑦᑎᓂᖅ",
+        "alt_book_icon": "ᑲᓇᐅᑎᔪᖅ ᐱᒋᐊᖅ",
+        "iaes": {
+            "institution": "IAES",
+            "degree": "2022 - ᐊᒥᖅᑐᖅ",
+            "description": "ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ."
+        },
+        "pearson": {
+            "institution": "ᑭᕙᓱᓐᖅ ᐊᖏᖅᓂᖅ (Pearson)",
+            "degree": "2022 - 2023",
+            "description": "ᑭᕙᓱᓐᖅ ᐊᖏᖅᓂᖅ ᐱᒋᐊᖅ ᑕᑯᓐᓇᖅᑕᐅᔭᖅ"
+        },
+        "argentina_programa": {
+            "institution": "Argentina Programa",
+            "degree": "2022 - 2023",
+            "description": "ᐱᒋᐊᖅ ᑯᕐᕕᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ ᐱᒋᐊᖅᑎᑦᑎᓂᖅ"
+        },
+        "freecodecamp": {
+            "institution": "FreeCodeCamp",
+            "degree": "ᐸᐅᓪᓕᐅᑎᓂᖅ 2021",
+            "description": "ᑲᓇᐅᑎᔪᖅᑎᖅᑭᑦ ᑲᓇᐅᑎᔪᖅᑎᖅ ᑯᓇᓇᑎᖃᖅ ᑕᑯᓐᓇᖅᑎᑦᑎᓂᖅ"
+        }
+    }
+}
+    

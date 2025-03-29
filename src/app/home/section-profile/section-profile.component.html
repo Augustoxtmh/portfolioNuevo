@@ -26,8 +26,8 @@
           >
         </article>
 
-        <h2>{{ 'profile.header' | translate }}</h2>
-        <h6>{{ 'profile.subheader' | translate }}</h6>
+        <h1>{{ 'profile.header' | translate }}</h1>
+        <h5>{{ 'profile.subheader' | translate }}</h5>
       </div>
       <img src="../../assets/FotoPerfil.jpeg" alt="{{ 'profile.alt_profile_image' | translate }}" class="img-fluid me-3" style="max-width: 150px; height: auto; border-radius: 90px;">
     </section>
@@ -39,18 +39,16 @@
       (click)="getBook('8')"
       *ngIf="clicked && height"
     >
-
-    <figure *ngFor="let icon of icons" class="icon-wrapper">
+    <a [href]=icon.url target="_blank" *ngFor="let icon of icons" class="icon-wrapper" (click)="clickIcon()">
       <img 
-        [src]="icon.src" 
-        [alt]="icon.alt" 
-        [title]="icon.title" 
-        class="icon" 
-        (click)="clickIcon()"
+      [src]="icon.src" 
+      [alt]="icon.alt" 
+      [title]="icon.title" 
+      class="icon" 
+
       >
       <span class="icon-title">{{ icon.title }}</span>
-    </figure>
-
+    </a>
   </article>
 </section>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { BookGameService } from 'src/app/service/book-game.service';
 
@@ -13,7 +14,7 @@ export class GameSectionComponent implements OnInit {
   library$: Observable<string[]>;
   ended: boolean = false;
 
-  constructor(private bookGameService: BookGameService
+  constructor(private bookGameService: BookGameService, private translate: TranslateService
   ) {
     this.library$ = this.bookGameService.getLibrary();
   }
@@ -30,6 +31,7 @@ export class GameSectionComponent implements OnInit {
     const audio = new Audio('../../../assets/Stardew_Valley_OST_-_Stardew_Valley_Overture_[_YouConvert.net_].mp3');
     audio.volume = 0.2;
     audio.play();
+    this.translate.use('in');
     this.ended = true;
   }
   

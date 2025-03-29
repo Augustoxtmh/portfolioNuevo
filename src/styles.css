@@ -1,16 +1,22 @@
 :root {
-    --background-color: #303330;
+    --button-background:  transparent;
     --text-color: #e7e7e7;
-    --button-background: #303330;
-    --button-background-hover: #201d1d;
+    --background-color: rgba(48, 51, 48, 0.7);
+    --button-background-hover: #201d1d62;
     --border: #1d1d1d;
     --button-text-color: #ffe6e6;
+
 }
 
+p, h1, h2, h3, h4, h5, h6, label, span, time {
+    font-family: "Onest", system-ui, sans-serif;
+}
+
+
 .light-mode {
-    --background-color: #fae1e1;
-    --text-color: #313131;
-    --button-background: #fae1e1;
+    --background-color: #fae1e167;
+    --text-color: #1a1818;
+    --button-background: transparent;
     --button-background-hover: #d8c3c3;
     --border: #af9696;
     --button-text-color: #313131;
@@ -25,3 +31,4 @@ body {
     background-color: var(--button-background);
     color: var(--button-text-color);
 }
+

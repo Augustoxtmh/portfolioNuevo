@@ -10,7 +10,7 @@
   
   export class SectionProfileComponent {
     @Output() themeChanged = new EventEmitter<boolean>();
-    urlTheme: string = '../../../assets/icons8-moon-90-removebg-preview.png';
+    urlTheme: string = '../../../assets/icons8-sun-100-removebg-preview.png';
     theme: boolean = false;
     urlLang: string = '../../../assets/icons8-spain-flag-48-removebg-preview.png';
     lang: boolean = false;
@@ -21,11 +21,11 @@
     height: boolean = true;
 
     icons = [
-      { title: 'Github', src: '../../assets/icons8-github-50.png', alt: 'Angular icon' },
-      { title: 'Linkedin', src: '../../assets/icons8-linkedin-50.png', alt: 'Typescript icon' },
-      { title: 'Juanaugustohaser@gmail.com', src: '../../assets/icons8-email-30.png', alt: 'Html icon' }
+      { title: 'Github', src: '../../assets/icons8-github-50.png', alt: 'Github icon', url: 'https://github.com/Augustoxtmh' },
+      { title: 'Linkedin', src: '../../assets/icons8-linkedin-50.png', alt: 'Linkedin icon', url: 'https://www.linkedin.com/in/juan-augusto-haser-744733247/' },
+      { title: 'Juanaugustohaser@gmail.com', src: '../../assets/icons8-email-30.png', alt: 'Email icon', url: 'mailto:Juanaugustohaser@gmail.com' }
     ];
-
+    
     constructor(private translate: TranslateService, private bookGameService: BookGameService){}
 
     switchTheme() {
@@ -38,8 +38,9 @@
 
     private updateThemeIcon() {
       this.urlTheme = this.theme 
-        ? '../../../assets/icons8-sun-100-removebg-preview.png'
-        : '../../../assets/icons8-moon-90-removebg-preview.png';
+        
+        ? '../../../assets/icons8-moon-90-removebg-preview.png'
+        : '../../../assets/icons8-sun-100-removebg-preview.png';
     }
 
     switchLang()

@@ -7,8 +7,8 @@
     "contact": {
         "header": "Contact",
         "name_label": "Name:",
-        "reply_label": "Reply to:",
-        "message_label": "Message:",
+        "reply_label": "Your email:",
+        "message_label": "Your message:",
         "send_button": "Send email",
         "view_cv": "View resume",
         "go_linkedin": "Go to LinkedIn"

@@ -1,6 +1,7 @@
 <section id="content">
   <h5 class="text-center">{{ 'experience.header' | translate }}</h5>
-  <article *ngFor="let exp of experiencias; let i = index" class="d-flex align-items-center mb-3">
+  <article *ngFor="let exp of experiencias; let i = index" 
+    class="d-flex align-items-center mb-3">
     <img *ngIf="exp.logo" [src]="exp.logo" alt="logo" class="me-3">
     <div>
       <span class="medium">{{ 'experience.projects.' + i + '.title' | translate }}</span><br>
@@ -11,14 +12,13 @@
         </li>
       </ul>
     </div>
-    <figure *ngIf="exp.logo === '../../assets/icons8-fiverr-144.png' && second">
+    <figure *ngIf="i == 1 &&second">
       <img 
         src="../../../assets/icons8-book-96.png" 
         alt="book" 
         class="book" 
         (click)="getBook()" 
       >
-      <figcaption>Entity icon</figcaption>
     </figure>
   </article>
 </section>

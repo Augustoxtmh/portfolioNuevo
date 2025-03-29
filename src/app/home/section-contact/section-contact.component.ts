@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { TranslateService } from '@ngx-translate/core';
 import { ToastrService } from 'ngx-toastr';
@@ -17,14 +18,16 @@ export class SectionContactComponent{
   copySuccess: boolean = false;
   copied: boolean = false;
   currentLang: string = 'es';
-
+  urlCV: SafeResourceUrl = ''; 
+  showCV: boolean = false;
   forth: boolean = true;
   five: boolean = true;
   nine: boolean = true;
 
   constructor(private toastr: ToastrService,
     private translate: TranslateService,
-    private bookGameServ: BookGameService
+    private bookGameServ: BookGameService,
+    private sanitizer: DomSanitizer
   ) {
     emailjs.init('ShlzPiGJZe8tIhb1S');
   }
@@ -79,5 +82,16 @@ export class SectionContactComponent{
         this.nine = false;
     }
     this.bookGameServ.addToLibrary('Book ' + number);
+  }
+
+  toggleCV() {
+    this.currentLang = this.translate.currentLang;
+    if (this.currentLang === 'en') {
+      this.urlCV = this.sanitizer.bypassSecurityTrustResourceUrl('assets/cv/Juan Augusto Haser CVIngles.pdf');
+    } else {
+      this.urlCV = this.sanitizer.bypassSecurityTrustResourceUrl('assets/cv/Juan Augusto Haser CV.pdf');
+    }
+
+    this.showCV = !this.showCV;
   }
 }

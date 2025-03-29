@@ -7,8 +7,8 @@
     "contact": {
         "header": "Contacto",
         "name_label": "Nombre:",
-        "reply_label": "Responder a:",
-        "message_label": "Mensaje:",
+        "reply_label": "Tu correo:",
+        "message_label": "Tu mensaje:",
         "send_button": "Enviar email",
         "view_cv": "Ver curriculum",
         "go_linkedin": "Ir a LinkedIn"
@@ -46,8 +46,6 @@
             "Gestioné la instalación, configuración y correcto uso de la aplicación en diversas oficinas, garantizando una transición sin problemas y soporte técnico continuo."
             ]
         }
-    
-        
         ]
     },
     "profile": {
@@ -97,6 +95,4 @@
             "description": "Certificado de FreeCodeCamp en Diseño."
         }
     }
-
-
 }

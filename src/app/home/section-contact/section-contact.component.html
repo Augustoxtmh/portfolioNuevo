@@ -16,7 +16,6 @@
         class="book" 
         (click)="getBook('4')" 
       >
-      <figcaption>Libro del minijuego</figcaption>
     </figure>
 
     <section class="col-12 col-md-12 col-lg-7">
@@ -36,7 +35,8 @@
               (click)="getBook('5')" 
             >
           </div>
-          <button class="icon-item" (click)="openCv()">
+          
+          <button class="icon-item" (click)="toggleCV()" id="CVButton">
             <img src="../../../assets/icons8-curriculum-100.png" alt="view/download curriculum icon">
             <p class="hide"><b>{{ 'contact.view_cv' | translate }}</b></p>
           </button>
@@ -74,3 +74,8 @@
 
   </article>
 </section>
+
+<div *ngIf="showCV" class="backdrop-blur" id="CVContainer">
+  <embed [src]="urlCV" class="CV__doc"/>
+  <button (click)="toggleCV()" id="CVButton-close">X</button>
+</div>

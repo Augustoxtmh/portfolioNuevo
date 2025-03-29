@@ -35,7 +35,7 @@ label {
     border: solid 2px black;
     padding: 50px;
     border-radius: 25px;
-    background-color: var(--button-background);
+    background-color: var(--background-color);
     max-width: 90%;
 }
 
@@ -82,11 +82,13 @@ img {
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-color: var(--text-color);
-    color: var(--text-color);;
+    color: var(--text-color);
 }
 
 .icon-item:hover {
     background-color: var(--button-background-hover);
+    box-shadow: 0 0 10px rgb(4, 186, 231);
+    color: rgb(4, 186, 231);
 }
 
 .icon-item img {
@@ -158,3 +160,37 @@ ul{
         padding: 0px;
     }
 }
+
+
+  
+#CVContainer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 250;
+}
+
+.CV__doc {
+    width: min(80%, 1000px);
+    height: 100vh;
+}
+
+#CVButton-close {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #fff;
+}
+
+#CVButton-close:hover {
+    cursor: pointer;
+}
+
+

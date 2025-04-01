@@ -19,6 +19,12 @@
             (click)="ganaste()">
             {{ 'game.play_btn' | translate }}
         </button>
+        <button 
+            class="btn btn-success" 
+            [ngClass]="{ 'show': clicked, 'hide': !clicked }" 
+            (click)="parar()">
+            {{ 'game.play_btn' | translate }}
+        </button>
     </article>
 
     <article [ngClass]="{ 'hide': !ended, 'show': ended }">

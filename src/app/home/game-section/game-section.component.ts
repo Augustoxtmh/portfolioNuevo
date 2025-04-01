@@ -13,6 +13,8 @@ export class GameSectionComponent implements OnInit {
   books: string[] = [];
   library$: Observable<string[]>;
   ended: boolean = false;
+  clicked: boolean = false;
+  audio = new Audio();
 
   constructor(private bookGameService: BookGameService, private translate: TranslateService
   ) {
@@ -28,11 +30,18 @@ export class GameSectionComponent implements OnInit {
   }
 
   ganaste() {
-    const audio = new Audio('../../../assets/Stardew_Valley_OST_-_Stardew_Valley_Overture_[_YouConvert.net_].mp3');
-    audio.volume = 0.2;
-    audio.play();
+    this.audio = new Audio('../../../assets/Stardew_Valley_OST_-_Stardew_Valley_Overture_[_YouConvert.net_].mp3');
+    this.audio.volume = 0.2;
+    this.audio.play();
     this.translate.use('in');
     this.ended = true;
+    this.clicked = true;
   }
   
+  parar() {
+    this.audio.pause();
+    this.translate.use('es');
+    this.ended = false;
+    this.clicked = false
+  }
 }
